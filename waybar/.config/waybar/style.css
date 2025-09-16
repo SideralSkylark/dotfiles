@@ -1,0 +1,253 @@
+/* Fonte & base */
+* {
+    font-family: "Roboto", "Noto Sans", "JetBrainsMono Nerd Font", "Noto Color Emoji", sans-serif;
+    font-size: 12px;
+    min-height: 0px;
+    border: none;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e8eaed;
+}
+
+/* Ícone da distro - Material Card */
+#custom-distro-icon {
+    background: rgba(32, 33, 36, 0.9);
+    border-radius: 12px;
+    padding: 1px 10px 1px 4px;
+    margin: 4px 3px;
+    color: #e8eaed;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 16px;
+    min-height: 16px;
+}
+
+#custom-distro-icon:hover {
+    background: rgba(48, 49, 52, 0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Workspaces - Material Floating */
+#workspaces {
+    background: rgba(32, 33, 36, 0.9);
+    border-radius: 16px;
+    padding: 8px 2px;
+    margin: 4px 3px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+#workspaces:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Workspaces - Material buttons */
+#workspaces button {
+    background: rgba(154, 160, 166, 0.15);
+    color: #9aa0a6;
+    border-radius: 50%;
+    margin: 1px 6px;
+    padding: 6px;
+    min-width: 5px;
+    min-height: 5px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(154, 160, 166, 0.25);
+    color: #bdc1c6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#workspaces button.active {
+    background: rgba(154, 160, 166, 0.6);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 107, 107, 0.4);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+/* Base styling para módulos - Material Cards */
+#window,
+#clock,
+#tray,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery,
+#custom-power,
+#custom-brightness,
+#custom-volume,
+#group-audio-net,
+#group-power-batt {
+    font-family: "Roboto", "JetBrainsMono Nerd Font", monospace;
+    background: rgba(32, 33, 36, 0.9);
+    border-radius: 12px;
+    padding: 6px 12px;
+    margin: 4px 3px;
+    color: #e8eaed;
+    transition: all 0.25s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Grupos - Material Surface */
+#group-audio-net,
+#group-power-batt {
+    border-radius: 14px;
+    padding: 4px 8px;
+    margin: 4px 4px;
+    background: rgba(32, 33, 36, 0.92);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Clock - Material Emphasis */
+#clock {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 8px 16px;
+    background: rgba(32, 33, 36, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-family: "Roboto Mono", "JetBrainsMono Nerd Font", monospace;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+/* Window title */
+#window {
+    font-weight: 400;
+    font-size: 12px;
+    color: #bdc1c6;
+    padding: 6px 14px;
+}
+
+/* Brightness & Volume */
+#custom-brightness,
+#custom-volume {
+    background: rgba(32, 33, 36, 0.9);
+    border-radius: 12px;
+    padding: 6px 10px;
+    color: #e8eaed;
+    font-size: 12px;
+    font-family: "Roboto", monospace;
+    transition: all 0.25s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Power button - Minimalista */
+#custom-power {
+    color: #e8eaed;
+    background: rgba(32, 33, 36, 0.9);
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#custom-power:hover {
+    color: #ff6b6b;
+    background: rgba(48, 49, 52, 0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+/* Estados específicos com cores sutis */
+#pulseaudio.muted {
+    color: #9aa0a6;
+}
+
+#network.disconnected {
+    color: #9aa0a6;
+}
+
+#bluetooth.off {
+    color: #9aa0a6;
+}
+
+/* Battery específico */
+#battery.warning {
+    color: #ffd93d;
+    border: 1px solid rgba(255, 217, 61, 0.2);
+}
+
+#battery.critical {
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    box-shadow: 0px 2px 8px rgba(255, 107, 107, 0.15);
+}
+
+#battery.charging {
+    color: #4ecdc4;
+    border: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+/* Hover states gerais - Material Elevation */
+#custom-distro-icon:hover,
+#window:hover,
+#clock:hover,
+#tray:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#custom-brightness:hover,
+#custom-volume:hover {
+    background: rgba(48, 49, 52, 0.95);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Tooltip - Material limpo */
+tooltip {
+    background: rgba(48, 49, 52, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #e8eaed;
+    padding: 10px 14px;
+    font-family: "Roboto", monospace;
+    font-size: 11px;
+    font-weight: 400;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+tooltip label {
+    font-weight: 400;
+    color: #e8eaed;
+}
+
+tooltip * {
+    color: #e8eaed;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+/* Tray específico */
+#tray {
+    padding: 6px 10px;
+}
+
+/* Ajustes finais */
+#group-audio-net {
+    margin-right: 1px;
+}
+
+#group-power-batt {
+    margin-left: 1px;
+}

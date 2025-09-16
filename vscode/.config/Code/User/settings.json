@@ -1,0 +1,58 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "workbench.editor.showTabs":"single",
+    "workbench.tips.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.sideBar.location": "right",
+    "explorer.compactFolders": false,
+    "catppuccin-icons.hidesExplorerArrows": true,
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.enabled": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.indent": 8,
+    "explorer.confirmDragAndDrop": false, 
+    "explorer.confirmDelete": false,
+    "explorer.decorations.badges": false,
+    "git.decorations.enabled": false,
+    "window.zoomLevel": 2, //zoom adjust as needed
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#000000"
+    },
+    "editor.matchBrackets": "always",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.guides.indentation": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlight":"none",
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.editor.labelFormat": "short",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "window.commandCenter": false,
+    "editor.minimap.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility":"compact",
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "remote.SSH.remotePlatform": {
+        "mint-desktop": "linux"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "github.copilot.enable": {
+        "*": false
+    },
+    "workbench.editor.editorActionsLocation":"default",
+    "workbench.activityBar.location": "hidden",
+    "vim.useSystemClipboard": true
+}
