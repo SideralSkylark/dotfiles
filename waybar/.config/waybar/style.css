@@ -84,6 +84,7 @@ window#waybar {
 
 /* Base styling para módulos - Material Cards */
 #window,
+#custom-swaync,
 #clock,
 #tray,
 #pulseaudio,
@@ -216,6 +217,7 @@ window#waybar {
 /* Hover states gerais - Material Elevation */
 #custom-distro-icon:hover,
 #window:hover,
+#custom-swaync:hover,
 #clock:hover,
 #tray:hover,
 #pulseaudio:hover,
