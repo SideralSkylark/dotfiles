@@ -94,6 +94,7 @@ window#waybar {
 #custom-powerprofile,
 #custom-brightness,
 #custom-volume,
+#custom-reading-mode,
 #group-audio-net,
 #group-power-batt {
     font-family: "Roboto", "JetBrainsMono Nerd Font", monospace;
@@ -222,6 +223,7 @@ window#waybar {
 #network:hover,
 #battery:hover,
 #custom-brightness:hover,
+#custom-reading-mode:hover,
 #custom-volume:hover,
 #custom-powerprofile:hover {
     background: rgba(48, 49, 52, 0.95);
