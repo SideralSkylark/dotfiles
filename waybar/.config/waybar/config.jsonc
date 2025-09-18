@@ -114,6 +114,16 @@
     "on-click-right": "~/.config/waybar/scripts/wifi-menu.sh"
   },
 
+  "custom/reading-mode": {
+    "exec": "~/.config/waybar/scripts/reading-mode.sh display",
+    "on-click": "~/.config/waybar/scripts/reading-mode.sh toggle",
+    "interval": 5,
+    "tooltip": true,
+    "exec-tooltip": "~/.config/waybar/scripts/reading-mode.sh tooltip",
+    "return-type": "text"
+  },
+
+
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "󰝟",
@@ -137,6 +147,16 @@
     "on-scroll-down": "brightnessctl set 5%-"
   },
 
+  "custom/powerprofile": {
+    "exec": "~/.config/waybar/scripts/powerprofile.sh",
+    "on-click": "~/.config/waybar/scripts/powerprofile.sh toggle",
+    "interval": 5,
+    "tooltip": true,
+    "return-type": "json",
+    "format": "{text}"
+  },
+
+
   "custom/power": {
     "format": "󰐥",
     "tooltip": "Power Menu",
@@ -145,11 +165,11 @@
 
   "group/system": {
     "orientation": "horizontal",
-    "modules": ["pulseaudio", "backlight", "bluetooth", "network"]
+    "modules": ["pulseaudio", "backlight", "bluetooth", "network", "custom/reading-mode"]
   },
 
   "group/power": {
     "orientation": "horizontal",
-    "modules": ["battery", "custom/power"]
+    "modules": ["custom/powerprofile", "battery", "custom/power"]
   }
 }
